@@ -131,6 +131,7 @@ nav h1 a {
 
 /* ====================== Restaurant Listing ====================== */
 #restaurants-list {
+ 
   background-color: #f3f3f3;
   list-style: outside none none;
   margin: 0;
@@ -181,6 +182,31 @@ nav h1 a {
   text-decoration: none;
   text-transform: uppercase;
 }
+/* Addtion */
+#restaurants-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media only screen and (max-width: 1140px){
+ #restaurants-list li  {
+ width: 40%;
+ margin: 10 auto;
+} 
+}
+@media only screen and (min-width: 770px) and (max-width: 990px){
+ #restaurants-list li  {
+ width: 35%;
+ margin: 10 auto;
+ float: left;
+} 
+}
+@media only screen and (max-width: 770px){
+ #restaurants-list li  {
+ width: 100%;
+ margin: 20 auto;
+} 
+}
+
 
 /* ====================== Restaurant Details ====================== */
 .inside header {
@@ -190,18 +216,14 @@ nav h1 a {
   z-index: 1000;
 }
 .inside #map-container {
-  background: blue none repeat scroll 0 0;
+  
   height: 87%;
-  position: fixed;
+  position: relative;
   right: 0;
   top: 80px;
-  width: 50%;
-}
-.inside #map {
-  background-color: #ccc;
-  height: 100%;
   width: 100%;
 }
+
 .inside #footer {
   bottom: 0;
   position: absolute;
@@ -273,3 +295,8 @@ nav h1 a {
 #restaurant-hours td {
   color: #666;
 }
+
+/* Addition */
+
+
+
